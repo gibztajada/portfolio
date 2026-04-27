@@ -32,7 +32,7 @@ const skillCategories = [
     code: 'BE',
     color: '#10b981',
     skills: [
-      'Node.js', 'Express.js', 'Laravel', 'Java',
+      'Node.js', 'Express.js', 'Laravel', 'Java', 'Python',
       'RESTful API', 'OAuth 1.0/2.0', 'SAML',
       'Line OAuth', 'Twitter/X OAuth',
     ],
@@ -44,6 +44,7 @@ const skillCategories = [
     color: '#a855f7',
     skills: [
       'MySQL', 'PostgreSQL', 'SQL Server',
+      'Django', 'Flask', 'FlaskAPI',
       'Prisma ORM', 'Schema Design', 'Data Sync',
     ],
   },

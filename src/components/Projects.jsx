@@ -22,7 +22,6 @@ const projects = [
     description:
       'Built a responsive frontend for a Japanese idol fan community platform with membership management, interactive features, and a smooth UX for fan engagement.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Zustand'],
-    status: 'LIVE',
     category: 'Fan Engagement',
     index: '01',
   },
@@ -33,7 +32,6 @@ const projects = [
     description:
       'Developed an enterprise-grade email management system with OAuth-based authentication, built on serverless AWS Lambda architecture and REST APIs.',
     tags: ['Java', 'AWS Lambda', 'REST API', 'Enterprise Auth'],
-    status: 'LIVE',
     category: 'Enterprise',
     index: '02',
   },
@@ -44,7 +42,6 @@ const projects = [
     description:
       'Built an interactive e-learning platform for children with engaging UI, content management, and progress tracking features.',
     tags: ['React', 'TypeScript', 'Next.js'],
-    status: 'DELIVERED',
     category: 'E-Learning',
     index: '03',
   },
@@ -55,7 +52,6 @@ const projects = [
     description:
       'Developed a digital publication platform with a smart matching service to connect readers with relevant content.',
     tags: ['Vue.js', 'Next.js'],
-    status: 'DELIVERED',
     category: 'E-Commerce',
     index: '04',
   },
@@ -66,7 +62,6 @@ const projects = [
     description:
       'Built a cross-platform mobile application for a poker merchandise store with product listings, cart, and checkout.',
     tags: ['React Native'],
-    status: 'DELIVERED',
     category: 'Mobile',
     index: '05',
   },
@@ -76,8 +71,7 @@ const projects = [
     company: 'HIPE Japan Inc.',
     description:
       'Developed multiple enterprise-level web applications handling complex business logic, data management, and user workflows.',
-    tags: ['PHP', 'JavaScript', 'Laravel'],
-    status: 'LIVE',
+    tags: ['PHP', 'JavaScript', 'Laravel', 'Python', 'Django'],
     category: 'Enterprise',
     index: '06',
   },
@@ -98,6 +92,8 @@ const tagColors = {
   'PHP': '#8892be',
   'JavaScript': '#f7df1e',
   'Laravel': '#ff2d20',
+  'Python': '#3776ab',
+  'Django': '#092e20',
 }
 
 function ProjectCard({ project, visible, delay }) {
@@ -127,17 +123,12 @@ function ProjectCard({ project, visible, delay }) {
         }}
       >
         {/* Card header */}
-        <div className="px-5 pt-5 pb-3 flex items-start justify-between gap-2">
-          <div>
-            <span
-              className="text-[0.55rem] tracking-widest uppercase"
-              style={{ fontFamily: '"JetBrains Mono", monospace', color: '#4b5563' }}
-            >
-              {project.index} · {project.category}
-            </span>
-          </div>
-          <span className={project.status === 'LIVE' ? 'status-live' : 'status-delivered'}>
-            {project.status}
+        <div className="px-5 pt-5 pb-3">
+          <span
+            className="text-[0.55rem] tracking-widest uppercase"
+            style={{ fontFamily: '"JetBrains Mono", monospace', color: '#4b5563' }}
+          >
+            {project.index} · {project.category}
           </span>
         </div>
 

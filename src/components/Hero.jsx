@@ -1,8 +1,8 @@
 const tickerItems = [
   'React', 'TypeScript', 'Vue.js', 'Node.js', 'Next.js', 'React Native',
-  'AWS Lambda', 'PostgreSQL', 'Laravel', 'Java', 'Tailwind CSS', 'Prisma ORM',
-  'Express.js', 'MySQL', 'REST API', 'OAuth 2.0', 'SAML', 'Zustand',
-  'JavaScript', 'HTML5', 'CSS3', 'Git', 'PHP', 'Pinia',
+  'AWS Lambda', 'PostgreSQL', 'Laravel', 'Java', 'Python', 'Tailwind CSS',
+  'Prisma ORM', 'Django', 'Flask', 'Express.js', 'MySQL', 'REST API',
+  'OAuth 2.0', 'SAML', 'Zustand', 'JavaScript', 'HTML5', 'CSS3', 'Git', 'PHP', 'Pinia',
 ]
 
 const tickerDouble = [...tickerItems, ...tickerItems]

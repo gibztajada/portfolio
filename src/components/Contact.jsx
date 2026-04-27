@@ -1,20 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-// ─── EmailJS config ───────────────────────────────────────────────────────────
-// Replace these three values after setting up your EmailJS account:
-//   1. Go to https://www.emailjs.com and sign up (free)
-//   2. Add a Gmail service (Email Services → Add Service → Gmail)
-//      → copy the Service ID here
-//   3. Create an email template (Email Templates → Create Template)
-//      Use these variables in the template body:
-//        From: {{from_name}} <{{from_email}}>
-//        Message: {{message}}
-//      → copy the Template ID here
-//   4. Go to Account → API Keys → copy your Public Key here
-const EMAILJS_SERVICE_ID  = 'service_j551o9q'
-const EMAILJS_TEMPLATE_ID = 'template_a020gje'
-const EMAILJS_PUBLIC_KEY  = 'CZTizkEst4YrVsvfa'
+// ─── EmailJS config (values loaded from .env) ────────────────────────────────
+const EMAILJS_SERVICE_ID  = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 // ─────────────────────────────────────────────────────────────────────────────
 
 function useInView(threshold = 0.1) {
